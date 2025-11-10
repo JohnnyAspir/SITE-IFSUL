@@ -19,14 +19,15 @@ h2 {
     transform-origin: center;
     /* Define o ponto de origem do zoom para o centro */
     margin-right: 16px;
-    width: 320px; 
-    height: 240;
+    width: 320px;
+    height: 240px;
 }
 
 #videoww:hover {
     transform: scale(1.2);
     /* Amplia a imagem em 20% quando o mouse passa por cima */
 }
+
 #videodm {
     transition: transform 0.5s;
     /* Suaviza o zoom em 0,5 segundos */
@@ -34,22 +35,23 @@ h2 {
     /* Define o ponto de origem do zoom para o centro */
     margin-left: 16px;
     margin-right: 16px;
-    width: 320px; 
-    height: 240;
+    width: 320px;
+    height: 240px;
 }
 
 #videodm:hover {
     transform: scale(1.2);
     /* Amplia a imagem em 20% quando o mouse passa por cima */
 }
+
 #videosn {
     transition: transform 0.5s;
     /* Suaviza o zoom em 0,5 segundos */
     transform-origin: center;
     /* Define o ponto de origem do zoom para o centro */
     margin-left: 16px;
-    width: 320px; 
-    height: 240;
+    width: 320px;
+    height: 240px;
 }
 
 #videosn:hover {
@@ -58,11 +60,90 @@ h2 {
 }
 
 .container {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;    /* Centraliza verticalmente */
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
 }
+
 .top3 {
     text-align: center;
     color: rgb(255, 255, 228);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(255, 255, 228)
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(255, 255, 228);
+        font-size: 17px;
+    }
+
+    #videoww {
+        transition: transform 0.5s;
+        /* Suaviza o zoom em 0,5 segundos */
+        transform-origin: center;
+        /* Define o ponto de origem do zoom para o centro */
+        margin-right: 16px;
+        width: 320px;
+        height: 240px;
+    }
+
+    #videoww:hover {
+        transform: scale(1.2);
+        /* Amplia a imagem em 20% quando o mouse passa por cima */
+    }
+
+    #videodm {
+        transition: transform 0.5s;
+        /* Suaviza o zoom em 0,5 segundos */
+        transform-origin: center;
+        /* Define o ponto de origem do zoom para o centro */
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 320px;
+        height: 240px;
+    }
+
+    #videodm:hover {
+        transform: scale(1.2);
+        /* Amplia a imagem em 20% quando o mouse passa por cima */
+    }
+
+    #videosn {
+        transition: transform 0.5s;
+        /* Suaviza o zoom em 0,5 segundos */
+        transform-origin: center;
+        /* Define o ponto de origem do zoom para o centro */
+        margin-left: 16px;
+        width: 320px;
+        height: 240px;
+    }
+
+    #videosn:hover {
+        transform: scale(1.2);
+        /* Amplia a imagem em 20% quando o mouse passa por cima */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    .top3 {
+        text-align: center;
+        color: rgb(255, 255, 228);
+    }
 }
