@@ -136,11 +136,9 @@ h2 {
 
     .container {
         display: flex;
-        justify-content: center;
-        /* Centraliza horizontalmente */
-        align-items: center;
-        /* Centraliza verticalmente */
         flex-direction: column;
+        /* Centraliza horizontalmente */
+        /* Centraliza verticalmente */
     }
 
     .top3 {
