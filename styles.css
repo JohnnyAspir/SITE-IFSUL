@@ -95,6 +95,7 @@ h2 {
         /* Define o ponto de origem do zoom para o centro */
         width: 320px;
         height: 240px;
+        margin: 0px;
     }
 
     #videoww:hover {
@@ -109,6 +110,7 @@ h2 {
         /* Define o ponto de origem do zoom para o centro */
         width: 320px;
         height: 240px;
+        margin: 0px;
     }
 
     #videodm:hover {
@@ -123,6 +125,7 @@ h2 {
         /* Define o ponto de origem do zoom para o centro */
         width: 320px;
         height: 240px;
+        margin: 0px;
     }
 
     #videosn:hover {
@@ -132,11 +135,11 @@ h2 {
 
     .container {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
         /* Centraliza horizontalmente */
+        align-items: center;
         /* Centraliza verticalmente */
+        flex-direction: column;
     }
 
     .top3 {
