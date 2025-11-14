@@ -15,9 +15,7 @@ h2 {
 
 #videoww {
     transition: transform 0.5s;
-    /* Suaviza o zoom em 0,5 segundos */
     transform-origin: center;
-    /* Define o ponto de origem do zoom para o centro */
     margin-right: 16px;
     width: 320px;
     height: 240px;
@@ -25,14 +23,11 @@ h2 {
 
 #videoww:hover {
     transform: scale(1.2);
-    /* Amplia a imagem em 20% quando o mouse passa por cima */
 }
 
 #videodm {
     transition: transform 0.5s;
-    /* Suaviza o zoom em 0,5 segundos */
     transform-origin: center;
-    /* Define o ponto de origem do zoom para o centro */
     margin-left: 16px;
     margin-right: 16px;
     width: 320px;
@@ -41,14 +36,11 @@ h2 {
 
 #videodm:hover {
     transform: scale(1.2);
-    /* Amplia a imagem em 20% quando o mouse passa por cima */
 }
 
 #videosn {
     transition: transform 0.5s;
-    /* Suaviza o zoom em 0,5 segundos */
     transform-origin: center;
-    /* Define o ponto de origem do zoom para o centro */
     margin-left: 16px;
     width: 320px;
     height: 240px;
@@ -56,15 +48,12 @@ h2 {
 
 #videosn:hover {
     transform: scale(1.2);
-    /* Amplia a imagem em 20% quando o mouse passa por cima */
 }
 
 .container {
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
     align-items: center;
-    /* Centraliza verticalmente */
 }
 
 .top3 {
@@ -74,7 +63,7 @@ h2 {
 
 @media screen and (max-width: 800px) {
     body {
-        background-color: red;
+        background-color: rgb(42, 42, 42);
     }
 
     h1 {
@@ -90,9 +79,7 @@ h2 {
 
     #videoww {
         transition: transform 0.5s;
-        /* Suaviza o zoom em 0,5 segundos */
         transform-origin: center;
-        /* Define o ponto de origem do zoom para o centro */
         width: 320px;
         height: 240px;
         margin: 0px;
@@ -100,14 +87,11 @@ h2 {
 
     #videoww:hover {
         transform: scale(1.2);
-        /* Amplia a imagem em 20% quando o mouse passa por cima */
     }
 
     #videodm {
         transition: transform 0.5s;
-        /* Suaviza o zoom em 0,5 segundos */
         transform-origin: center;
-        /* Define o ponto de origem do zoom para o centro */
         width: 320px;
         height: 240px;
         margin: 0px;
@@ -115,14 +99,11 @@ h2 {
 
     #videodm:hover {
         transform: scale(1.2);
-        /* Amplia a imagem em 20% quando o mouse passa por cima */
     }
 
     #videosn {
         transition: transform 0.5s;
-        /* Suaviza o zoom em 0,5 segundos */
         transform-origin: center;
-        /* Define o ponto de origem do zoom para o centro */
         width: 320px;
         height: 240px;
         margin: 0px;
@@ -130,15 +111,12 @@ h2 {
 
     #videosn:hover {
         transform: scale(1.2);
-        /* Amplia a imagem em 20% quando o mouse passa por cima */
     }
 
     .container {
         display: flex;
         justify-content: center;
-        /* Centraliza horizontalmente */
         align-items: center;
-        /* Centraliza verticalmente */
         flex-direction: column;
     }
 

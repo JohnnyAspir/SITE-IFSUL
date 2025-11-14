@@ -19,6 +19,3 @@ videosn.addEventListener('mouseover', function () {
 videosn.addEventListener('mouseout', function () {
     return videosn.load();
 })
-
-
-
