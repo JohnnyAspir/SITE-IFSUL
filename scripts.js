@@ -20,7 +20,8 @@ videosn.addEventListener('mouseout', function () {
     return videosn.load();
 })
 
-document.getElementById('form').addEventListener('submit', function (event) {
+const form = document.getElementById('form')
+form.addEventListener('submit', function (event) {
   event.preventDefault();
   const formData = new FormData(this);
   
