@@ -1,6 +1,8 @@
 const videoww = document.getElementById("videoww")
 const videodm = document.getElementById("videodm")
 const videosn = document.getElementById("videosn")
+const botaoenviar = document.getElementById("botaoenviar")
+var ServidorRecebeu = false;
 videoww.addEventListener('mouseover', function () {
     return videoww.play();
 })
@@ -22,10 +24,10 @@ videosn.addEventListener('mouseout', function () {
 
 const form = document.getElementById('form')
 form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  const formData = new FormData(this);
-  
-  enviarDados(formData);
+    event.preventDefault();
+    const formData = new FormData(this);
+    enviarDados(formData);
+    this.reset();
 });
 
 function enviarDados(formData) {
@@ -33,11 +35,73 @@ function enviarDados(formData) {
         method: 'POST',
         body: formData,
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Sucesso:', data);
-    })
-    .catch((error) => {
-        console.error('Erro:', error);
-    });
+        .then(response => response.json())
+        .then(data => {
+            ServidorRecebeu = true;
+            console.log('Sucesso:', data);
+
+        })
+        .catch((error) => {
+            ServidorRecebeu = false;
+            console.error('Erro:', error);
+        });
 }
+
+function DadosEnviados() {
+    const container = document.getElementById('container-spans');
+    const novoSpan = document.createElement('span');
+    novoSpan.textContent = 'Dados enviados!';
+    novoSpan.classList.add('span-animado');
+
+    container.appendChild(novoSpan);
+
+    void novoSpan.offsetWidth;
+
+    novoSpan.classList.add('span-visivel');
+
+    setTimeout(() => {
+        novoSpan.classList.remove('span-visivel');
+        setTimeout(() => {
+            if (container.contains(novoSpan)) {
+                container.removeChild(novoSpan);
+            }
+        }, 500);
+    }, 1500);
+}
+function InfosEmFalta() {
+    const container = document.getElementById('container-spans');
+    const novoSpan = document.createElement('span');
+    novoSpan.textContent = 'Complete as informações em falta!';
+    novoSpan.classList.add('span-animado');
+
+    container.appendChild(novoSpan);
+
+    void novoSpan.offsetWidth;
+
+    novoSpan.classList.add('span-visivel');
+
+    setTimeout(() => {
+        novoSpan.classList.remove('span-visivel');
+        setTimeout(() => {
+            if (container.contains(novoSpan)) {
+                container.removeChild(novoSpan);
+            }
+        }, 500);
+    }, 1500);
+};
+
+botaoenviar.addEventListener('click', function () {
+    const nome = document.getElementById("nome")
+    const email = document.getElementById("email")
+
+    if (nome.value == "" && email.value == "") {
+        return InfosEmFalta();
+    }
+    else if (ServidorRecebeu = true) {
+        return DadosEnviados();
+    } else {
+        return console.log("Servidor não recebeu!")
+    }
+
+});
+

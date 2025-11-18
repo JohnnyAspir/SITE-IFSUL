@@ -63,15 +63,14 @@ h2 {
 
 .divform {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente o formulário dentro do container */
-    align-items: center;     /* Centraliza verticalmente (se necessário) */        /* Exemplo: ocupa a altura total da viewport para demonstração */
+    justify-content: center;
+    align-items: center;
 }
 
 form {
     display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente em coluna */
-    align-items: center;    /* Centraliza horizontalmente os inputs dentro do form */
-    /* Outros estilos para o formulário, se desejar */
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     border: 1px solid #ccc;
 }
@@ -88,6 +87,23 @@ button {
     width: 100px;
 }
 
+.span-animado {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 5px;
+    opacity: 0; 
+    transition: all 0.5s ease-out;
+}
+
+.span-visivel {
+    bottom: 20px;
+    opacity: 1;
+}
 
 @media screen and (max-width: 800px) {
     body {
